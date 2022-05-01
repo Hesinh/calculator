@@ -1,7 +1,7 @@
 let number1 = '';
 let storeNumber = document.querySelector("#btn");
 storeNumber.addEventListener('click' , function(){
-   testing = '1';
+   let testing = '1';
    number1 += testing;
 });
 let operate = function() {
