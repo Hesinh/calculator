@@ -59,7 +59,25 @@ SelOpDiv.addEventListener('click', () => {
     }
 })
 
+// final part of the program
+let equalStore = '';
 
+let selEqual = document.querySelector("#equal");
+selEqual.addEventListener('click', () => {
+    extraB = parseInt(valueA);
+    if(operator === '+'){
+        alert(sum(extraA,extraB))
+    }
+    if(operator === '-'){
+        alert(res(extraA,extraB))
+    }
+    if(operator === '*'){
+        alert(mul(extraA,extraB))
+    }
+    if(operator === '/'){
+        alert(div(extraA,extraB))
+    }
+})
 
 
 // This are the operators, it needs an adjusment to work in events
