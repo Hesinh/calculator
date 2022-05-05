@@ -33,18 +33,30 @@ let SelOpMin = document.querySelector("#minus");
 SelOpMin.addEventListener('click', () => {
     operator = '-';
     alert(operator);
+    if(operator === '+' || operator === '-' || operator === '*' || operator === '/'){
+        extraA = parseInt(valueA);
+        valueA = '';
+    }
 })
 
 let SelOpMul = document.querySelector("#multiply");
 SelOpMul.addEventListener('click', () => {
     operator = '*';
     alert(operator);
+    if(operator === '+' || operator === '-' || operator === '*' || operator === '/'){
+        extraA = parseInt(valueA);
+        valueA = '';
+    }
 })
 
 let SelOpDiv = document.querySelector("#divide");
 SelOpDiv.addEventListener('click', () => {
     operator = '/';
     alert(operator);
+    if(operator === '+' || operator === '-' || operator === '*' || operator === '/'){
+        extraA = parseInt(valueA);
+        valueA = '';
+    }
 })
 
 
