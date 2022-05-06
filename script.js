@@ -5,7 +5,7 @@ let extraB = '';
 let totalValue = '';
 
 
-
+// controls the display and the buttons value of 0-9
 
 const container = document.getElementById("container");
 for (let i = 0 ; i < 10 ; i++){
@@ -65,13 +65,13 @@ SelOpDiv.addEventListener('click', () => {
     }
 })
 
-// final part of the program
-let equalStore = '';
+// This controls the last phase , when the equal button is pressed
+//let equalStore = '';
 
 let selEqual = document.querySelector("#equal");
 selEqual.addEventListener('click', () => {
     extraB = parseInt(valueA);
-    equalStore = '=';
+ //   equalStore = '=';
     if(operator === '+'){
         totalValue = sum(extraA,extraB)
     }
@@ -88,7 +88,7 @@ selEqual.addEventListener('click', () => {
 })
 
 
-// This are the operators, it needs an adjusment to work in events
+// This are the ecuations , for every situation
 let sum = function(valueA, valueB){
     let result = valueA + valueB ;
     return result
@@ -109,3 +109,15 @@ let div = function(valueA, valueB){
 let displayNum1 = document.querySelector("#number1");
 let displayNum2 = document.querySelector("#number2");
 let displayTotal = document.querySelector("#total");
+
+//This controls the button clear
+const clear = document.querySelector('#clear')
+clear.addEventListener('click', () => {
+    valueA = '';
+    extraA = '';
+    extraB = '';
+    totalValue = '';
+    displayNum1.textContent = '';
+    displayNum2.textContent = '';
+    displayTotal.textContent = '';
+})
