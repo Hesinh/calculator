@@ -29,7 +29,7 @@ let operator = '';
 let SelOpPlus = document.querySelector("#plus");
 SelOpPlus.addEventListener('click', () => {
     operator = '+';
-    alert(operator);
+    displayOperator.textContent = operator;
     if(operator === '+' || operator === '-' || operator === '*' || operator === '/'){
         extraA = parseInt(valueA);
         valueA = '';
@@ -38,7 +38,7 @@ SelOpPlus.addEventListener('click', () => {
 let SelOpMin = document.querySelector("#minus");
 SelOpMin.addEventListener('click', () => {
     operator = '-';
-    alert(operator);
+    displayOperator.textContent = operator;
     if(operator === '+' || operator === '-' || operator === '*' || operator === '/'){
         extraA = parseInt(valueA);
         valueA = '';
@@ -48,7 +48,7 @@ SelOpMin.addEventListener('click', () => {
 let SelOpMul = document.querySelector("#multiply");
 SelOpMul.addEventListener('click', () => {
     operator = '*';
-    alert(operator);
+    displayOperator.textContent = operator;
     if(operator === '+' || operator === '-' || operator === '*' || operator === '/'){
         extraA = parseInt(valueA);
         valueA = '';
@@ -58,7 +58,7 @@ SelOpMul.addEventListener('click', () => {
 let SelOpDiv = document.querySelector("#divide");
 SelOpDiv.addEventListener('click', () => {
     operator = '/';
-    alert(operator);
+    displayOperator.textContent = operator;
     if(operator === '+' || operator === '-' || operator === '*' || operator === '/'){
         extraA = parseInt(valueA);
         valueA = '';
@@ -107,6 +107,7 @@ let div = function(valueA, valueB){
 }
 //early prototype of display
 let displayNum1 = document.querySelector("#number1");
+let displayOperator = document.querySelector('#operator');
 let displayNum2 = document.querySelector("#number2");
 let displayTotal = document.querySelector("#total");
 
@@ -119,6 +120,7 @@ clear.addEventListener('click', () => {
     totalValue = '';
     operator = '';
     displayNum1.textContent = '';
+    displayOperator.textContent = '';
     displayNum2.textContent = '';
     displayTotal.textContent = '';
 })
