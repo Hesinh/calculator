@@ -1,9 +1,14 @@
 body {
     display: flex;
     flex-direction: column;
+    background-color: rgb(244, 166, 31);
+    margin: 0;
+    padding: 0;
 }
 #container {
     display: flex;
+    height: 4em;
+    justify-content: center;
 }
 #display {
     display: flex;
@@ -22,4 +27,11 @@ body {
 #total {
     border: 2px solid black;
     width: 5em;
+}
+button {
+    justify-content: center;
+    font-size: x-large;
+}
+#operators {
+    display: flex;
 }
