@@ -119,8 +119,8 @@ clear.addEventListener('click', () => {
     extraB = '';
     totalValue = '';
     operator = '';
-    displayNum1.textContent = '';
-    displayOperator.textContent = '';
-    displayNum2.textContent = '';
-    displayTotal.textContent = '';
+    displayNum1.textContent = '0';
+    displayOperator.textContent = '?';
+    displayNum2.textContent = '0';
+    displayTotal.textContent = '0';
 })

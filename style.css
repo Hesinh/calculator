@@ -22,20 +22,11 @@ header {
 #display {
     display: flex;
     border: 2px solid black;
-    
-}
-#number1 {
-    border: 2px solid black;
-    width: 5em;
-}
-#number2 {
-    border: 2px solid black;
-    width: 5em;
-
-}
-#total {
-    border: 2px solid black;
-    width: 5em;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
 }
 button {
     justify-content: center;
