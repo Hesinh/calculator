@@ -4,6 +4,15 @@ body {
     background-color: rgb(244, 166, 31);
     margin: 0;
     padding: 0;
+    min-height: 100vh;
+
+}
+header {
+    display: flex;
+    color: white;
+    background-color: #1f2937;
+    padding: 15px;
+    margin-bottom: auto;
 }
 #container {
     display: flex;
@@ -34,4 +43,12 @@ button {
 }
 #operators {
     display: flex;
+}
+footer {
+    display: flex;
+    color: white;
+    background-color: #1f2937;
+    padding: 15px;
+    justify-content: center;
+    margin-top: auto;
 }
