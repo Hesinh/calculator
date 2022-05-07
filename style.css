@@ -1,11 +1,9 @@
 body {
     display: flex;
     flex-direction: column;
-    background-color: rgb(244, 166, 31);
     margin: 0;
     padding: 0;
     min-height: 100vh;
-
 }
 header {
     display: flex;
@@ -36,6 +34,7 @@ button {
 }
 #operators {
     display: flex;
+    width: 100%;
 }
 footer {
     display: flex;
